@@ -65,7 +65,7 @@
 	</style>
 </head>
 <body>
-<?php echo"bzay" ?>
+<?php echo"jetul" ?>
 <div id="container">
 	<h1>Welcome to CodeIgniter!</h1>
 
