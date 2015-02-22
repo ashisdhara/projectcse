@@ -7,7 +7,7 @@ class Control extends CI_Controller {
         if (!isset($_SESSION['name'])) {
 
 
-            $this->load->view("login");
+            $this->load->view("registration_view");
         } else {
             $name = $_SESSION['name'];
 
