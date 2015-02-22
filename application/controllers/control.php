@@ -89,72 +89,7 @@ class Control extends CI_Controller {
         header("Location:$url");
     }
 
-    public function quiz() {
-        session_start();
-        $name = $_SESSION['name'];
-        //$i=$_SESSION['i'];
-        if (!isset($_SESSION['i'])) {
-            $i = 1;
-            $_SESSION['i'] = $i;
-        } else {
-            $i = $_SESSION['i'];
-        }
-        echo "$i";
-        if ($i > 10) {
-            $_SESSION['i'] = 1;
-            $url = base_url("/control/index");
-            header("Location:$url");
-        }
-        $this->load->model("model_quiz");
-        $result = $this->model_quiz->get_quiz_details($i);
-        $question = $result['question'];
-        $answer = $result['answer'];
-        $option1 = $result['option1'];
-        $option2 = $result['option2'];
-        $option3 = $result['option3'];
-        $option4 = $result['option4'];
-        $data = array(
-            'question' => $question,
-            'option1' => $option1,
-            'option2' => $option2,
-            'option3' => $option3,
-            'option4' => $option4,
-            'name' => $name
-        );
-        $this->load->view("quiz", $data);
-    }
-
-    public function check() {
-        session_start();
-        $this->load->model("model_quiz");
-        $name = $_SESSION['name'];
-        $i = $_SESSION['i'];
-        if (isset($_SESSION['score'])) {
-            $score = $_SESSION['score'];
-        }
-        if ($i == 1) {
-            $this->model_quiz->insert_marks(0, $name);
-            $score = 0;
-            $this->model_quiz->inform_test_taken($name);
-        }
-        $answer = $this->input->post('answer');
-        $this->load->model("model_quiz");
-        $check_result = $this->model_quiz->check_answer($i, $answer);
-        if ($check_result == 1) {
-            $score = $score + 1;
-        }
-        if ($i == 10) {
-            $this->model_quiz->insert_marks($score, $name);
-            $url = base_url("/control/index");
-            header("Location:$url");
-        }
-        $i = $i + 1;
-        $_SESSION['score'] = $score;
-        $_SESSION['i'] = $i;
-        $url = base_url("/control/quiz");
-        header("Location:$url");
-    }
-
+    
     public function logout() {
         session_start();
         session_destroy();
