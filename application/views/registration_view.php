@@ -32,18 +32,18 @@
 
     <div class="container">
 
-      <form class="form-signin">
+        <form class="form-signin" method="post" action = "<?php echo base_url('home/registration_submit') ?>">
         <h3 class="form-signin-heading" style="color:black"><strong>Please enter these data</strong></h3>
-		<label for="inputUsername" class="sr-only">Username</label>
-		<input type="text" id="inputUsername" class="form-control" placeholder="Username" required>
+		<label for="inputUsername" class="sr-only" >Username</label>
+		<input type="text" id="inputUsername" name ="username" class="form-control" placeholder="Username" required>
         <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required>
+        <input type="email" id="inputEmail" name = "email" class="form-control" placeholder="Email address" required>
         <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <input type="password" id="inputPassword" name="password" class="form-control" placeholder="Password" required>
 		<label for="inputName" class="sr-only">Name</label>
-        <input type="text" id="inputName" class="form-control" placeholder="Name" required>
-		<label for="inputPhone" class="sr-only">Phone No.</label>
-        <input type="tel" id="inputPhone" class="form-control" placeholder="Phone No." required>
+        <input type="text" id="inputName"  name ="name" class="form-control" placeholder="Name" required>
+		<label for="inputPhone"  class="sr-only">Phone No.</label>
+        <input type="tel" id="inputPhone" name = "phonenumber" class="form-control" placeholder="Phone No." required>
         <div class="checkbox">
           <label>
             <input type="checkbox" value="remember-me"> <strong>Remember me</strong>
