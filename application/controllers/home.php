@@ -9,7 +9,10 @@ class Home extends CI_Controller{
     }
         
     }
-    
+    public function login()
+	{
+		$this->load->view('login_view') ;
+	}
      public function register() {
      $this->load->view("registration_view");}
      
