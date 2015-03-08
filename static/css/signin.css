@@ -1,7 +1,9 @@
 body {
   padding-top: 40px;
   padding-bottom: 40px;
-  background-color: #BF4DA2
+  background-image: url("background.jpg");
+  font-family:Cursive;
+  
 }
 
 .form-signin {

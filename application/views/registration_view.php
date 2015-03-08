@@ -44,11 +44,7 @@
         <input type="text" id="inputName"  name ="name" class="form-control" placeholder="Name" required>
 		<label for="inputPhone"  class="sr-only">Phone No.</label>
         <input type="tel" id="inputPhone" name = "phonenumber" class="form-control" placeholder="Phone No." required>
-        <div class="checkbox">
-          <label>
-            <input type="checkbox" value="remember-me"> <strong>Remember me</strong>
-          </label>
-        </div>
+        
         <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>
       </form>
 
