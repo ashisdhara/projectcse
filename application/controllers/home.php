@@ -5,7 +5,11 @@ class Home extends CI_Controller{
         session_start();
         if(!isset($_SESSION['user_id']))
         {
-        $this->register(); 
+        $this->login(); 
+    }
+    else
+    {
+        $this->user_homepage();
     }
         
     }
@@ -13,7 +17,27 @@ class Home extends CI_Controller{
 	{
 		$this->load->view('login_view') ;
 	}
-     public function register() {
+    public function login_submit()
+    {    session_start();
+        $this->load->model('users_model');
+        $email = $this->input->post('email_id');
+        $password = $this->input->post('password');
+        $result=$this->users_model->check_login($email,$password);
+        $user_id=$result['id'];
+        if($result==0)
+        {
+            echo "error!";
+        }
+        else
+        {
+            $_SESSION['user_id']=$user_id;
+            echo $_SESSION['user_id'];
+            $url=base_url('/home');
+            header("Location:$url");
+        }
+    }
+
+     public function registration() {
      $this->load->view("registration_view");}
      
      public function registration_submit()
@@ -28,8 +52,29 @@ class Home extends CI_Controller{
          //echo "$name";
          $this->load->model('users_model');
          $this->users_model->register_insert($username , $email , $password , $name , $phonenumber);
-         $url="home/register";
+         $url="home/login";
          header("Location:$url");
+     }
+     public function user_homepage()
+     {
+         $this->load->view("home_view");
+     }
+     public function display_queries_and_comments()
+     {   $this->load->model('qac_model');
+            
+         $result=$this->qac_model->get_queries_and_comments($this->input->post('courseid'));
+         $this->load->view('qac_view',$result);
+         
+     }
+     public function display_queries_and_comments($course_id)
+     {   $this->load->model('qac_model');
+         $result=$this->qac_model->get_queries_and_comments($this->input->post('courseid'));
+         $this->load->view('qac_view',$result);
+         
+     }
+     public function insert_queries_and_comments()
+     {
+         
      }
 }
 

@@ -23,7 +23,7 @@ DROP TABLE IF EXISTS `additional_resources`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `additional_resources` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `topic` varchar(100) DEFAULT NULL,
   `link` varchar(200) DEFAULT NULL,
   PRIMARY KEY (`id`)
@@ -47,7 +47,7 @@ DROP TABLE IF EXISTS `courses`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `courses` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `course_name` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
@@ -63,51 +63,51 @@ LOCK TABLES `courses` WRITE;
 UNLOCK TABLES;
 
 --
--- Table structure for table `queries_and_comments`
+-- Table structure for table `qac`
 --
 
-DROP TABLE IF EXISTS `queries_and_comments`;
+DROP TABLE IF EXISTS `qac`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `queries_and_comments` (
-  `id` int(11) NOT NULL,
+CREATE TABLE `qac` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) DEFAULT NULL,
   `comments` varchar(500) DEFAULT NULL,
-  `rating` int(11) DEFAULT NULL,
+  `course_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `queries_and_comments`
+-- Dumping data for table `qac`
 --
 
-LOCK TABLES `queries_and_comments` WRITE;
-/*!40000 ALTER TABLE `queries_and_comments` DISABLE KEYS */;
-/*!40000 ALTER TABLE `queries_and_comments` ENABLE KEYS */;
+LOCK TABLES `qac` WRITE;
+/*!40000 ALTER TABLE `qac` DISABLE KEYS */;
+/*!40000 ALTER TABLE `qac` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
--- Table structure for table `study_material`
+-- Table structure for table `sm`
 --
 
-DROP TABLE IF EXISTS `study_material`;
+DROP TABLE IF EXISTS `sm`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
-CREATE TABLE `study_material` (
-  `id` int(11) NOT NULL,
+CREATE TABLE `sm` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `course_no` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `study_material`
+-- Dumping data for table `sm`
 --
 
-LOCK TABLES `study_material` WRITE;
-/*!40000 ALTER TABLE `study_material` DISABLE KEYS */;
-/*!40000 ALTER TABLE `study_material` ENABLE KEYS */;
+LOCK TABLES `sm` WRITE;
+/*!40000 ALTER TABLE `sm` DISABLE KEYS */;
+/*!40000 ALTER TABLE `sm` ENABLE KEYS */;
 UNLOCK TABLES;
 
 --
@@ -141,7 +141,7 @@ DROP TABLE IF EXISTS `tasks`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tasks` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `course_id` int(11) DEFAULT NULL,
   `question` varchar(200) DEFAULT NULL,
   `answers_option` int(11) DEFAULT NULL,
@@ -166,7 +166,7 @@ DROP TABLE IF EXISTS `users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `users` (
-  `id` int(11) NOT NULL,
+  `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(50) DEFAULT NULL,
   `email_id` varchar(50) DEFAULT NULL,
   `password` varchar(50) DEFAULT NULL,
@@ -174,7 +174,7 @@ CREATE TABLE `users` (
   `phone_number` int(11) DEFAULT NULL,
   `student_or_faculty` char(1) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -183,6 +183,7 @@ CREATE TABLE `users` (
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (1,'madhu','madhu@madhu.com','madhu','madhu',2147483647,'y');
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -195,4 +196,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2015-02-26 18:07:11
+-- Dump completed on 2015-03-14 16:02:54
