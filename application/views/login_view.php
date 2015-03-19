@@ -32,7 +32,7 @@
 
     <div class="container">
 
-        <form class="form-signin" method="post" action = "<?php echo base_url('home/login_submit') ?>">
+        <form class="form-signin" method="post" action = "<?php echo base_url('/home/login_submit') ?>">
         <h3 class="form-signin-heading" style="color:black"><strong>Login</strong></h3>
 		<label for="inputUsername" class="sr-only" >Username</label>
 		<input type="text" id="inputEmailid" name ="email_id" class="form-control" placeholder="Email" required>
@@ -43,7 +43,7 @@
         <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
       </form>
         <div>
-        <a href="<?= base_url('/home/registration')?>">click here to register</a> 
+        <a href="<?php echo base_url('/home/registration')?>">click here to register</a> 
         </div>
     </div> <!-- /container -->
 

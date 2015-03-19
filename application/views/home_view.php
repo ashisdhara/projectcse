@@ -12,13 +12,13 @@
     <title>DARU|HOME</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
-    <link href="<?=base_url('../static/css/bootstrap.min.css')?>" rel="stylesheet">
+    <link href="<?php echo base_url('../static/css/bootstrap.min.css')?>" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="<?=base_url('../static/css/freelancer.css')?>" rel="stylesheet')">
+    <link href="<?php echo base_url('../static/css/freelancer.css')?>" rel="stylesheet')">
 
     <!-- Custom Fonts -->
-    <link href="<?=base_url('../static/font-awesome/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css">
+    <link href="<?php echo base_url('../static/font-awesome/css/font-awesome.min.css')?>" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
@@ -49,19 +49,17 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
+                    
                     <li class="page-scroll">
-                        <a href="#about">Login</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">SignUp</a>
+                        <a href="#contact">Sign Out</a>
                     </li>
                 </ul>
-            </div>
+            </div> 
             <!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
@@ -83,6 +81,10 @@
         </div>
     </header>
 
+
+<br>
+<br>
+	
 <nav role="navigation" class="navbar navbar-default">
 
     <!-- Collection of nav links and other content for toggling -->
@@ -110,7 +112,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="<?=base_url('../static/img/portfolio/cabin.png')?>" class="img-responsive" alt="">
+                        <img src="<?php echo base_url('../static/img/portfolio/cabin.png')?>" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -120,7 +122,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="<?=base_url('../static/img/portfolio/cake.png')?>" class="img-responsive" alt="">
+                        <img src="<?php echo base_url('../static/img/portfolio/cake.png')?>" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -130,7 +132,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="<?=base_url('../static/img/portfolio/circus.png')?>" class="img-responsive" alt="">
+                        <img src="<?php echo base_url('../static/img/portfolio/circus.png')?>" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -140,7 +142,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="<?=base_url('../static/img/portfolio/game.png')?>" class="img-responsive" alt="">
+                        <img src="<?php echo base_url('../static/img/portfolio/game.png')?>" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -150,7 +152,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="<?=base_url('../static/img/portfolio/safe.png')?>" class="img-responsive" alt="">
+                        <img src="<?php echo base_url('../static/img/portfolio/safe.png')?>" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
@@ -160,7 +162,7 @@
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="<?=base_url('../static/img/portfolio/submarine.png')?>" class="img-responsive" alt="">
+                        <img src="<?php echo base_url('../static/img/portfolio/submarine.png')?>" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>
@@ -179,21 +181,22 @@
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-2">
                     <p>
-                    In the program, an inner class named Inner is defined within the scope of class Outer.
-					Therefore, any code in class Inner can directly access the variable outer_x. An instance
-					method named display( ) is defined inside Inner. This method displays outer_x on the
-					standard output stream. The main( ) method of InnerClassDemo creates an instance of
-					class Outer and invokes its test( ) method. That method creates an instance of class Inner
-                    and the display( ) method is called
+                    DARU(Direct Access of Resources For You) is a sincere effort by the 3rd Year students of NIT Durgapur to 
+					bring to you the best and the most fun aspects of Computer Science. We realise that CSE is a subject which cannot be crammed 
+					and learnt by heart but to be implemented and enjoyed. As CSE engineers, our laptops(or desktops) are our best friends - and the concepts and ideas that make up the Computer Science are not monstrous or 
+                    out-of-this-world theories but simple mathematics of 0s and 1s!
+
                     </p>
                 </div>
                 <div class="col-lg-4">
                     <p>
-                    It is important to realize that an instance of Inner can be created only within the scope
-					of class Outer. The Java compiler generates an error message if any code outside of class
-					Outer attempts to instantiate class Inner. (In general, an inner class instance must be
-					created by an enclosing scope.) You can, however, create an instance of Inner outside of
-					Outer by qualifying its name with Outer, as in Outer.Inner
+                    We're bringing you some basic subjects in Computer Science , which every engineer should be familiar with. The subjects 
+					have been simplified to make the concepts simple and understandable . DARU provides you with the best material to help you
+					with your journey into CSE. Fun facts, quizzes ,forums, study materials... everything you need!!
+                    <br>
+					<br>
+                    So gear up and let the adventure begin. ALL THE BEST!!!
+ 
                     </p>
                 </div>
 
@@ -204,7 +207,7 @@
 
     <!-- Footer -->
     <footer class="text-center">
-        <div class="footer-above">
+        <!--<div class="footer-above">
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-4">
@@ -217,13 +220,15 @@
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
-                        <h3>About DARU</h3>
-                        <p>asdf ghj klll llnzxcbahx erndg chk js ch kda  <a href="http://startbootstrap.com">DARU</a>.</p>
+                        
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="footer-below">
+        </div> -->
+        <br>
+		<br>
+		
+		<div class="footer-below">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
@@ -234,3 +239,4 @@
         </div>
     </footer>
 
+</html>

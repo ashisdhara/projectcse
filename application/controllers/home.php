@@ -66,12 +66,7 @@ class Home extends CI_Controller{
          $this->load->view('qac_view',$result);
          
      }
-     public function display_queries_and_comments($course_id)
-     {   $this->load->model('qac_model');
-         $result=$this->qac_model->get_queries_and_comments($this->input->post('courseid'));
-         $this->load->view('qac_view',$result);
-         
-     }
+     
      public function insert_queries_and_comments()
      {
          
