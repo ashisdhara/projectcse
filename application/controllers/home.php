@@ -59,17 +59,31 @@ class Home extends CI_Controller{
      {
          $this->load->view("home_view");
      }
+     
      public function display_queries_and_comments()
-     {   $this->load->model('qac_model');
-            
-         $result=$this->qac_model->get_queries_and_comments($this->input->post('courseid'));
-         $this->load->view('qac_view',$result);
+     { 
+        $this->load->model('qac_model');
+        $course_id = $this->input->post('course_id');
+        //$_SESSION['course_id']=$course_id;
+        $result=$this->qac_model->get_queries_and_comments($course_id);
+        $data=array('result'=>$result);
+        $this->load->view('display_qac_view',$data);
          
      }
      
      public function insert_queries_and_comments()
      {
+         $this->load->model('qac_model');
+         $result=$this->qac_model->put_queries_and_comments($_SESSION['userid'],$this->input->post('comments'),$_SESSION['course_id']);
+          $url="home/display_queries_and_comments";
+         header("Location:$url");
          
+         
+     }
+     
+     public function queries()
+     {
+         $this->load->view('queries_view');
      }
 }
 
