@@ -81,6 +81,10 @@ class Home extends CI_Controller {
     public function queries() {
         $this->load->view('queries_view');
     }
+    public function logout ()
+    {
+        
+    }
 
 }
 
