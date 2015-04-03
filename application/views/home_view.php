@@ -126,13 +126,13 @@
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                    <a href="<?php echo base_url('content')?>" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="<?php echo base_url('../static/img/portfolio/circus.png')?>" class="img-responsive" alt="">
+                        <img src="<?php echo base_url('../static/images/content.jpg')?>" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
