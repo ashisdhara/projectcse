@@ -56,9 +56,19 @@ class Home extends CI_Controller {
     }
 
     public function display_queries_and_comments() {
+         session_start();
         $this->load->model('qac_model');
-        $course_id = $this->input->post('course_id');
-        //$_SESSION['course_id']=$course_id;
+       
+        if(isset($_POST['course_id']))
+        {
+             $course_id = $this->input->post('course_id');
+             $_SESSION['course_id']=$course_id;
+
+        }
+ else {
+     $course_id=$_SESSION['course_id'];
+
+ }
         $search_data['list'] = $this->qac_model->get_queries_and_comments($course_id);
         //$data=array('result'=>$result);
         //$this->load->view('display_qac_view',$data);
@@ -71,10 +81,15 @@ class Home extends CI_Controller {
         $this->load->view("display_qac_view", $search_data);
     }
 
+
     public function insert_queries_and_comments() {
+       session_start();
         $this->load->model('qac_model');
-        $result = $this->qac_model->put_queries_and_comments($_SESSION['userid'], $this->input->post('comments'), $_SESSION['course_id']);
-        $url = "home/display_queries_and_comments";
+        $userid=$_SESSION['user_id'];
+        $course_id=$_SESSION['course_id'];
+        $comment=$this->input->post('comments');
+        $this->qac_model->put_queries_and_comments($userid, $comment,$course_id);
+        $url = "display_queries_and_comments";
         header("Location:$url");
     }
 
