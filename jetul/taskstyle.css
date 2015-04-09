@@ -1,0 +1,568 @@
+
+p
+{
+	font-size:1.6em;
+	color:#FFD119;
+	text-shadow: 2px 2px 2px #4C3D00;
+	font-family: Rock Salt, cursive;
+	
+}
+p>span
+{
+	font-variant:uppercase;
+	font-size:2.2em;
+	text-shadow:4px 4px #4C3D00;
+	font-weight:bold;
+}
+img
+{
+	border: 4px solid #FFCC00;
+	border-radius:100px;
+	height:100px;
+	max-width:100%;
+	clear:both;
+}
+
+.questions
+{
+	display:inline-block;
+	margin: 15px 15px 15px 15px;
+	background-color: #FFD119;
+	-moz-box-shadow: 5px 5px 5px 5px #CC66FF;
+	-webkit-box-shadow: -10px 5px 5px 5px #CC66FF;
+	box-shadow: 5px 5px 5px 5px #CC66FF;
+	border-radius:20px;
+}
+::-moz-selection 
+{
+ background:#660066;
+}
+
+::selection
+ { background: #660066; }
+@-webkit-keyframes 
+icon-beat
+ {  
+	0% 
+		{
+ -webkit-transform: scale(2);
+ -ms-transform: scale(2);
+ transform: scale(2);
+	}
+ 100%
+   {
+ -webkit-transform: scale(1);
+ -ms-transform: scale(1);
+ transform: scale(1);
+	}
+}
+
+@keyframes 
+icon-beat
+ {  0% 
+	{
+ -webkit-transform: scale(2);
+ -ms-transform: scale(2);
+ transform: scale(2);
+	}
+ 100% 
+	{
+ -webkit-transform: scale(1);
+ -ms-transform: scale(1);
+ transform: scale(1);
+	}	
+}
+
+* 
+{
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+body 
+{
+  padding: 1em;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  font: normal 200 14px/1.5rem "Roboto", "Helvetica Neue", sans-serif;
+  color: #CC99FF; 
+  background:#663380 url(http://i302.photobucket.com/albums/nn106/xwackjobx/QUESTIONMARKBACKGROUND.jpg) repeat right top;
+  background-size:100px 100px;
+  margin: 20px 20px 20px 20px;
+}
+
+h2
+ {
+  font-size: 3em;
+  color: #E6B800;
+  text-shadow:2px 2px #000000;
+  font-variant:small-caps;
+  font-family: Audiowide, cursive; 
+  font-weight: 400; 
+}
+
+h1 
+{
+  font-size: 4em;
+  color: #FFE066;
+  font-weight: 5px;
+  display:block;
+  text-shadow: 5px 5px #806600;
+  font-variant:small-caps;
+  font-family: Orbitron, sans-serif;
+  
+}
+
+label 
+{
+  display: block;
+  position: relative;
+  padding: 0.5rem 1rem;
+  line-height: 28px;
+  font-weight: normal;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  font-family: Rock Salt, cursive;
+}
+
+label:last-of-type
+ { margin-right: 1rem; }
+
+label i 
+{
+  display: inline-block;
+  height: 25px;
+  position: relative;
+  top: 6px;
+  font-style: normal;
+  color: #FF0000;
+
+}
+
+label span
+ {
+  display: inline-block;
+  margin-left: 5px;
+  line-height: 25px;
+  color: #660000;
+  font-weight:600;
+}
+
+input[type="radio"]'
+{ display: none; }
+
+input[type="radio"] + i:before,
+ {
+  font-family: 'FontAwesome';
+  font-size: 28px;
+  height: 25px;
+  width: 25px;
+  font-weight:1em;
+  display: inline-block;
+
+}
+
+input[type="radio"]:checked + i,
+ {
+  position: fixed;
+  -webkit-animation: icon-beat 0.1s ease;
+  animation: icon-beat 0.1s ease;
+}
+
+input[type="radio"]:checked + i + span,
+{
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+input[type="radio"] + i:before 
+{ content: "\2718"; }
+
+input[type="radio"]:checked + i:before
+ { content: '\2714'; }
+
+input[type="radio"]:checked + i + span,
+input[type="radio"]:checked + i:before
+ { color: green }
+
+button
+{
+	display: inline-block;
+	font-size: 1.1em;
+	font-weight: bold;
+	padding: 15px 15px;
+	margin: 5em auto;
+	color: #944D94;
+	background-color: #FFCC00;
+	background: -webkit-linear-gradient(#FFCC00, #997A00);
+	background: linear-gradient(#FFCC00, #997A00);
+	border: 0 none;
+	border-radius: 3px;
+	text-shadow: 0 -1px 0 #663380;
+	box-shadow: 0 1px 0 #E6B800, 0 5px 0 #B28F00, 0 6px 6px rgba(0,0,0,0.6);
+	cursor: pointer;
+	-webkit-transition: all 150ms ease;
+	transition: all 150ms ease;
+	clear:both;
+	font-family: Rock Salt, cursive;
+	margin-left:50px;
+}
+
+/* Buzz Effect */
+@-webkit-keyframes hvr-buzz 
+{
+  50%
+  {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  100% 
+  {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+@keyframes hvr-buzz 
+{
+  50% 
+  {
+    -webkit-transform: translateX(3px) rotate(2deg);
+    transform: translateX(3px) rotate(2deg);
+  }
+
+  100% 
+  {
+    -webkit-transform: translateX(-3px) rotate(-2deg);
+    transform: translateX(-3px) rotate(-2deg);
+  }
+}
+
+.hvr-buzz 
+{
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-buzz:hover, .hvr-buzz:focus, .hvr-buzz:active 
+{
+  -webkit-animation-name: hvr-buzz;
+  animation-name: hvr-buzz;
+  -webkit-animation-duration: 0.15s;
+  animation-duration: 0.15s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  color:red;
+  font-variant:small-caps;
+}
+
+/* Bob Effect */
+@-webkit-keyframes hvr-bob 
+{
+  0% 
+  {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+
+  50% 
+  {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+
+  100% 
+  {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes hvr-bob 
+{
+  0% 
+  {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+
+  50% 
+  {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+  }
+
+  100% 
+  {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@-webkit-keyframes hvr-bob-float 
+{
+  100% 
+  {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes hvr-bob-float 
+{
+  100% 
+  {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+  }
+}
+
+.hvr-bob 
+{
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hvr-bob:hover, .hvr-bob:focus, .hvr-bob:active 
+{
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+  color:green;
+  font-variant:small-caps;
+}
+
+
+ul 
+{
+		margin: 30px auto;
+		text-align: center;
+}
+
+li 
+{
+		list-style: none;
+		position: fixed;
+		display: inline-block;
+		width: 100px;
+		height: 100px;
+	}
+
+@-moz-keyframes rotate 
+{
+		0% {transform: rotate(0deg);}
+		100% {transform: rotate(-360deg);}
+	}
+
+@-webkit-keyframes rotate 
+{
+		0% {transform: rotate(0deg);}
+		100% {transform: rotate(-360deg);}
+	}
+
+@-o-keyframes rotate 
+{
+		0% {transform: rotate(0deg);}
+		100% {transform: rotate(-360deg);}
+	}
+
+@keyframes rotate 
+{
+		0% {transform: rotate(0deg);}
+		100% {transform: rotate(-360deg);}
+	}
+
+.round 
+{
+		display: block;
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100%;
+		padding-top: 30px;		
+		text-decoration: none;		
+		text-align: center;
+		font-size: 25px;		
+		text-shadow: 0 1px 0 rgba(255,255,255,.7);
+		letter-spacing: -.065em;
+		font-family: Rock Salt, cursive;		
+		-webkit-transition: all .25s ease-in-out;
+		-o-transition: all .25s ease-in-out;
+		-moz-transition: all .25s ease-in-out;
+		transition: all .25s ease-in-out;
+		box-shadow: 2px 2px 7px rgba(0,0,0,.2);
+		border-radius: 300px;
+		z-index: 1;
+		border-width: 4px;
+		border-style: solid;
+		margin: 0;
+		padding: 0;
+		-moz-box-sizing: border-box;
+		-o-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+.round:hover 
+{
+		width: 130%;
+		height: 130%;
+		left: -15%;
+		top: -15%;
+		font-size: 33px;
+		padding-top: 38px;
+		-webkit-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+		-o-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+		-moz-box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+		box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+		z-index: 2;
+		border-size: 10px;
+		-webkit-transform: rotate(-360deg);
+		-moz-transform: rotate(-360deg);
+		-o-transform: rotate(-360deg);
+		transform: rotate(-360deg);
+	}
+
+a.red 
+{
+		background-color: rgba(239,57,50,1);
+		color: rgba(133,32,28,1);
+		border-color: rgba(133,32,28,.2);
+	}
+
+a.red:hover 
+{
+		color: rgba(239,57,50,1);
+	}
+
+a.yellow 
+{
+		background-color: rgba(252,227,1,1);
+		color: rgba(153,38,0,1);
+		border-color: rgba(153,38,0,.2);
+	}
+
+a.yellow:hover 
+{
+		color: rgba(252,227,1,1);
+}
+
+.round span.round 
+{
+		display: block;
+		opacity: 0;
+		-webkit-transition: all .5s ease-in-out;
+		-moz-transition: all .5s ease-in-out;
+		-o-transition: all .5s ease-in-out;
+		transition: all .5s ease-in-out;
+		font-size: 1px;
+		border: none;
+		padding: 40% 20% 0 20%;
+		color: #fff;
+	}
+
+.round span:hover 
+{
+		opacity: .85;
+		font-size: 16px;
+		-webkit-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+		-moz-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+		-o-text-shadow: 0 1px 1px rgba(0,0,0,.5);
+		text-shadow: 0 1px 1px rgba(0,0,0,.5);	
+  
+	}
+
+.red span 
+{
+	background: rgba(133,32,28,.7);		
+}
+
+.yellow span 
+{
+		background: rgba(161,145,0,.7);	
+}
+
+#rightguy
+{
+right:60px;
+bottom:60px;
+}
+
+#leftguy
+{
+left:60px;
+bottom:60px;
+}
+
+/* entire container, keeps perspective */
+.flip-container 
+{
+	perspective: 1000;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+		transform: rotateY(180deg);
+	}
+
+.flip-container, .front, .back 
+{
+	height:200px;
+	width:150px;
+}
+
+/* flip speed goes here */
+.flipper 
+{
+	transition: 1s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back
+ {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+/* front pane, placed above back */
+.front 
+{
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back 
+{
+	transform: rotateY(180deg);
+}
