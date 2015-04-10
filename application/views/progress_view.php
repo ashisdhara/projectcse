@@ -76,7 +76,7 @@
 
                     <div class="intro-text">
 
-                         <span class="skills">Start Learning Now !!!!</span>
+                         <span class="skills">Time to rest your brain Now !!!!</span>
 
                     </div>
                 </div>
@@ -102,28 +102,9 @@
 
 
    <center>
-	  <div style="background-color:#FFFFFF;width:1100px;">   <!-- main block -->
-     <p>
-     <form action="<?php echo base_url('content/subject1') ; ?>" method="post">
-         <label>
-             <h3>
-                 Subject 1
-             </h3>
-         </label>
-        <input type="submit" value="subject1" placeholder ="go" />
-        </form>
-     </p>
-     <p>
-     <form action="<?php echo base_url('content/subject2') ; ?>" method="post">
-         <label>
-             <h3>
-                 Subject 1
-             </h3>
-         </label>
-        <input type="submit" value="subject2" placeholder ="go" />
-        </form>
-     </p>
-		</div>
+       <h3>
+           This page will show your progress based on the tests . 
+       </h3>
    </center>
   </div>
 </body>

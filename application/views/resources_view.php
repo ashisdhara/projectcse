@@ -13,7 +13,7 @@
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="<?php echo base_url('../static/css/bootstrap.css')?>" rel="stylesheet">
-
+    
     <!-- Custom CSS -->
     <link href="<?php echo base_url('../static/css/freelancer.css')?>" rel="stylesheet">
 
@@ -76,7 +76,7 @@
 
                     <div class="intro-text">
 
-                         <span class="skills">Start Learning Now !!!!</span>
+                         <span class="skills">Its Time to refer  !!!!</span>
 
                     </div>
                 </div>
@@ -95,7 +95,6 @@
             <li><a href="<?php echo base_url('home/experiences')?>">Experiences</a></li>
             <li><a href="<?php echo base_url('home/faq')?>">FAQ</a></li>
             <li><a href="<?php echo base_url('home/contact_us')?>">Contact</a></li>
-
         </ul>
     </div>
 </nav>
@@ -103,26 +102,11 @@
 
    <center>
 	  <div style="background-color:#FFFFFF;width:1100px;">   <!-- main block -->
-     <p>
-     <form action="<?php echo base_url('content/subject1') ; ?>" method="post">
-         <label>
-             <h3>
-                 Subject 1
-             </h3>
-         </label>
-        <input type="submit" value="subject1" placeholder ="go" />
-        </form>
-     </p>
-     <p>
-     <form action="<?php echo base_url('content/subject2') ; ?>" method="post">
-         <label>
-             <h3>
-                 Subject 1
-             </h3>
-         </label>
-        <input type="submit" value="subject2" placeholder ="go" />
-        </form>
-     </p>
+          <h5>
+              Here is going to be some content of the resources of the subjects  
+          </h5>
+          
+          
 		</div>
    </center>
   </div>

@@ -95,7 +95,6 @@
             <li><a href="<?php echo base_url('home/experiences')?>">Experiences</a></li>
             <li><a href="<?php echo base_url('home/faq')?>">FAQ</a></li>
             <li><a href="<?php echo base_url('home/contact_us')?>">Contact</a></li>
-
         </ul>
     </div>
 </nav>
@@ -103,26 +102,15 @@
 
    <center>
 	  <div style="background-color:#FFFFFF;width:1100px;">   <!-- main block -->
-     <p>
-     <form action="<?php echo base_url('content/subject1') ; ?>" method="post">
-         <label>
-             <h3>
-                 Subject 1
-             </h3>
-         </label>
-        <input type="submit" value="subject1" placeholder ="go" />
+          <h5>
+              Here is going to be some content of subject 1 
+          </h5>
+          
+          <form action="<?php echo base_url('content/subject1next/2') ; ?>" method="post">
+         
+        <input type="submit" value="Next" placeholder ="go" />
         </form>
-     </p>
-     <p>
-     <form action="<?php echo base_url('content/subject2') ; ?>" method="post">
-         <label>
-             <h3>
-                 Subject 1
-             </h3>
-         </label>
-        <input type="submit" value="subject2" placeholder ="go" />
-        </form>
-     </p>
+           
 		</div>
    </center>
   </div>

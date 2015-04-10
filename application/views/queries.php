@@ -19,16 +19,7 @@
 
     <!-- Custom Fonts -->
     <link href="<?php echo base_url('../static/font-awesome/css/font-awesome.css')?>" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
+    
 </head>
 
 <body id="page-top" class="index">
@@ -90,11 +81,12 @@
     <!-- Collection of nav links and other content for toggling -->
     <div id="navbarCollapse" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="<?php echo base_url('home')?>">Home</a></li>
-            <li><a href="<?php echo base_url('home/contact_us')?>">About</a></li>
-            <li><a href="<?php echo base_url('home/experiences')?>">Experiences</a></li>
-            <li><a href="<?php echo base_url('home/faq')?>">FAQ</a></li>
-            <li><a href="<?php echo base_url('home/contact_us')?>">Contact</a></li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Experiences</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
 
         </ul>
     </div>
@@ -104,7 +96,7 @@
    <center>
 	  <div style="background-color:#FFFFFF;width:1100px;">   <!-- main block -->
      <p>
-     <form action="<?php echo base_url('content/subject1') ; ?>" method="post">
+     <form action="<?php echo base_url('home/display_queries_and_comments/1') ; ?>" method="post">
          <label>
              <h3>
                  Subject 1
@@ -114,7 +106,7 @@
         </form>
      </p>
      <p>
-     <form action="<?php echo base_url('content/subject2') ; ?>" method="post">
+     <form action="<?php echo base_url('home/display_queries_and_comments/2') ; ?>" method="post">
          <label>
              <h3>
                  Subject 1

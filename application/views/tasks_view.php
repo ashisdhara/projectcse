@@ -76,7 +76,7 @@
 
                     <div class="intro-text">
 
-                         <span class="skills">Start Learning Now !!!!</span>
+                         <span class="skills">Test Yourself Now !!!!</span>
 
                     </div>
                 </div>
@@ -104,7 +104,7 @@
    <center>
 	  <div style="background-color:#FFFFFF;width:1100px;">   <!-- main block -->
      <p>
-     <form action="<?php echo base_url('content/subject1') ; ?>" method="post">
+     <form action="<?php echo base_url('tasks/subject1') ; ?>" method="post">
          <label>
              <h3>
                  Subject 1
@@ -114,7 +114,7 @@
         </form>
      </p>
      <p>
-     <form action="<?php echo base_url('content/subject2') ; ?>" method="post">
+     <form action="<?php echo base_url('tasks/subject2') ; ?>" method="post">
          <label>
              <h3>
                  Subject 1

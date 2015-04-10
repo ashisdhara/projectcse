@@ -3,13 +3,13 @@
 
 <head>
 
-    
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>DARU|HOME</title>
+    <title>DARU|CONTACT US</title>
 
     <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
     <link href="<?php echo base_url('../static/css/bootstrap.css')?>" rel="stylesheet">
@@ -32,7 +32,7 @@
 </head>
 
 <body id="page-top" class="index">
- <div style="background-image:url(<?=base_url('../static/images/main_bg.png')?>;Background-repeat:default>
+ <div style="background-image:url(<?=base_url('../static/images/main_bg.png')?>);Background-repeat:default">
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -55,10 +55,7 @@
                         <a href="#page-top"></a>
                     </li>
                     <li class="page-scroll">
-                        <a href="#about">Login</a>
-                    </li>
-                    <li class="page-scroll">
-                        <a href="#contact">SignUp</a>
+                        <a href="#contact">Sign ouT</a>
                     </li>
                 </ul>
             </div>
@@ -76,7 +73,7 @@
 
                     <div class="intro-text">
 
-                         <span class="skills">Start Learning Now !!!!</span>
+                         <span class="skills">Contact Us</span>
 
                     </div>
                 </div>
@@ -90,11 +87,12 @@
     <!-- Collection of nav links and other content for toggling -->
     <div id="navbarCollapse" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="<?php echo base_url('home')?>">Home</a></li>
-            <li><a href="<?php echo base_url('home/contact_us')?>">About</a></li>
-            <li><a href="<?php echo base_url('home/experiences')?>">Experiences</a></li>
-            <li><a href="<?php echo base_url('home/faq')?>">FAQ</a></li>
-            <li><a href="<?php echo base_url('home/contact_us')?>">Contact</a></li>
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Experiences</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
 
         </ul>
     </div>
@@ -103,26 +101,37 @@
 
    <center>
 	  <div style="background-color:#FFFFFF;width:1100px;">   <!-- main block -->
-     <p>
-     <form action="<?php echo base_url('content/subject1') ; ?>" method="post">
-         <label>
-             <h3>
-                 Subject 1
-             </h3>
-         </label>
-        <input type="submit" value="subject1" placeholder ="go" />
-        </form>
-     </p>
-     <p>
-     <form action="<?php echo base_url('content/subject2') ; ?>" method="post">
-         <label>
-             <h3>
-                 Subject 1
-             </h3>
-         </label>
-        <input type="submit" value="subject2" placeholder ="go" />
-        </form>
-     </p>
+      <pre style ="color: blue ;">
+           <strong style ="font-size: 30px ;color: green ;float: left">Ashis Dhara</strong>  	<span style="font-size: 20px ;float: right">ashishere15@gmail.com</span>
+      </pre>
+      <pre style ="color: blue ;">
+            <strong style ="font-size: 30px ;color: green ;float: left">Bijay Khatri</strong>		<span style="font-size: 20px ;float: right">beezay.khatri267@gmail.com</span>
+      </pre>
+      <pre style ="color: blue ;">
+	       	<strong style ="font-size: 30px ;color: green ;float: left">Jetul Deori</strong>			<span style="font-size: 20px ;float: right">jdjetuld546@gmail.com</span>
+     </pre>
+      <pre style ="color: blue ;">
+	        <strong style ="font-size: 30px ;color: green ;float: left">Kevin Macaringue</strong>		<span style="font-size: 20px ;float: right">kevinmacaringue@gmail.com</span>
+     </pre>
+      <pre style ="color: blue ;">
+	        <strong style ="font-size: 30px ;color: green ;float: left">Madhumita Gopal</strong>		<span style="font-size: 20px ;float: right">madhumitagopal9@gmail.com</span>
+     </pre>
+      <pre style ="color: blue ;">
+	        <strong style ="font-size: 30px ;color: green ;float: left">Payal Pradhan</strong>		<span style="font-size: 20px ;float: right">payal.alchemist@gmail.com</span>
+     </pre>
+      <pre style ="color: blue ;">
+	        <strong style ="font-size: 30px ;color: green ;float: left">Pulak Ranjan Rabha</strong>		<span style="font-size: 20px ;float: right">pulakranjanrabha666@gmail.com</span>
+     </pre>
+      <pre style ="color: blue ;">
+	        <strong style ="font-size: 30px ;color: green ;float: left">Swayamsidha Mohanty</strong>		<span style="font-size: 20px ;float: right">swayams.mohanty92@gmail.com</span>
+     </pre>
+      <pre style ="color: blue ;">
+	        <strong style ="font-size: 30px ;color: green ;float: left">T Sangeeta</strong>		<span style="font-size: 20px ;float: right">tsangeeta2013@gmail.com</span>
+     </pre>
+      <pre style ="color: blue ;">
+	        <strong style ="font-size: 30px ;color: green ;float: left">Vamshider Reddy</strong>		<span style="font-size: 20px ;float: right">vamshider.voncha@gmail.com</span>
+     </pre>
+
 		</div>
    </center>
   </div>

@@ -55,29 +55,22 @@ class Home extends CI_Controller {
         $this->load->view("home_view");
     }
 
-    public function display_queries_and_comments() {
+    public function display_queries_and_comments($course_id) {
          session_start();
         $this->load->model('qac_model');
-       
-        if(isset($_POST['course_id']))
+        $_SESSION['course_id'] = $course_id ;
+        /*if(isset($_POST['course_id']))
         {
              $course_id = $this->input->post('course_id');
              $_SESSION['course_id']=$course_id;
 
         }
- else {
-     $course_id=$_SESSION['course_id'];
+ else */{
+     //$course_id=$_SESSION['course_id'];
 
  }
         $search_data['list'] = $this->qac_model->get_queries_and_comments($course_id);
-        //$data=array('result'=>$result);
-        //$this->load->view('display_qac_view',$data);
-        //$user = $this->user_model->get_user($user_id);
-        //$name = $user->name;
-        //$user_data = array(
-        //    'comments' => $comments,
-        //);
-        //$this->load->view('navbar', $user_data);
+        
         $this->load->view("display_qac_view", $search_data);
     }
 
@@ -89,16 +82,40 @@ class Home extends CI_Controller {
         $course_id=$_SESSION['course_id'];
         $comment=$this->input->post('comments');
         $this->qac_model->put_queries_and_comments($userid, $comment,$course_id);
-        $url = "display_queries_and_comments";
+        $url = "display_queries_and_comments/".$course_id;
         header("Location:$url");
     }
 
     public function queries() {
-        $this->load->view('queries_view');
+        $this->load->view('queries');
     }
+    
+    
     public function logout ()
     {
-        
+        session_destroy();
+        $url = base_url('home/index');
+        header("Location:$url");
+    }
+    
+    public function contact_us()
+    {
+        $this->load->view('contact_us_view');
+    }
+    
+    public function resources()
+    {
+        $this->load->view('resources_view');
+    }
+    
+    public function fun ()
+    {
+        $this->load->view('fun_view');
+    }
+    
+    public function progress()
+    {
+        $this->load->view('progress_view');
     }
 
 }

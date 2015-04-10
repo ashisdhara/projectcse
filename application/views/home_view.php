@@ -90,12 +90,11 @@
     <!-- Collection of nav links and other content for toggling -->
     <div id="navbarCollapse" class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Resources</a></li>
-            <li><a href="#">Experiences</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="active"><a href="<?php echo base_url('home')?>">Home</a></li>
+            <li><a href="<?php echo base_url('home/contact_us')?>">About</a></li>
+            <li><a href="<?php echo base_url('home/experiences')?>">Experiences</a></li>
+            <li><a href="<?php echo base_url('home/faq')?>">FAQ</a></li>
+            <li><a href="<?php echo base_url('home/contact_us')?>">Contact</a></li>
 
         </ul>
     </div>
@@ -106,63 +105,63 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="<?php echo base_url('contents')?>" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="<?php echo base_url('../static/img/portfolio/cabin.png')?>" class="img-responsive" alt="">
+                        <img src="<?php echo base_url('../static/img/portfolio/study.png')?>" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                    <a href="<?php echo base_url('home/resources')?>" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="<?php echo base_url('../static/img/portfolio/cake.png')?>" class="img-responsive" alt="">
+                        <img src="<?php echo base_url('../static/img/portfolio/resources.png')?>" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="<?php echo base_url('content')?>" class="portfolio-link" data-toggle="modal">
+                    <a href="<?php echo base_url('home/queries')?>" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="<?php echo base_url('../static/images/content.jpg')?>" class="img-responsive" alt="">
+                        <img src="<?php echo base_url('../static/images/queries.png')?>" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                    <a href="<?php echo base_url('progress')?>" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="<?php echo base_url('../static/img/portfolio/game.png')?>" class="img-responsive" alt="">
+                        <img src="<?php echo base_url('../static/img/portfolio/progress.png')?>" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                    <a href="<?php echo base_url('task')?>" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="<?php echo base_url('../static/img/portfolio/safe.png')?>" class="img-responsive" alt="">
+                        <img src="<?php echo base_url('../static/img/portfolio/test.png')?>" class="img-responsive" alt="">
                     </a>
                 </div>
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                    <a href="<?php echo base_url('home/fun')?>" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="<?php echo base_url('../static/img/portfolio/submarine.png')?>" class="img-responsive" alt="">
+                        <img src="<?php echo base_url('../static/img/portfolio/fun.png')?>" class="img-responsive" alt="">
                     </a>
                 </div>
             </div>

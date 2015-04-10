@@ -16,5 +16,11 @@ class Tasks_model extends CI_Model {
             return $row;
         }
     }
+    
+    public function correct_answer($user_id , $course_id)
+    {
+        $query = $this->db->query('');
+        return ;
+    }
 
 }
